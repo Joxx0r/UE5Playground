@@ -14,4 +14,5 @@ AUE5PlaygroundGameMode::AUE5PlaygroundGameMode()
 	}
 	FString test = TEXT("bla");
 	FString test2 = TEXT("here comes ");
+	FString test3 = TEXT("here it comes");
 }
