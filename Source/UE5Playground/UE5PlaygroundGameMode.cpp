@@ -12,4 +12,5 @@ AUE5PlaygroundGameMode::AUE5PlaygroundGameMode()
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
+	FString test = TEXT("bla");
 }
