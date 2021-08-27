@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{B23BCB26-43CC-5F51-8E4E-44A97FEA3209}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "UE5Playground",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

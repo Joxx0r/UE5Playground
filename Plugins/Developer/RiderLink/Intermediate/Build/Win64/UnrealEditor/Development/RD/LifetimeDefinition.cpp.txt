@@ -1,0 +1,171 @@
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Intermediate\Build\Win64\UnrealEditor\Development\RD\Definitions.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\LifetimeDefinition.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\LifetimeImpl.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\std/hash.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\functional
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\yvals_core.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\vcruntime.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\sal.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\concurrencysal.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\vadefs.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xkeycheck.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\exception
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\yvals.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\crtdbg.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\vcruntime_new_debug.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\vcruntime_new.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\crtdefs.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\use_ansi.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\type_traits
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\cstdint
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\stdint.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xstddef
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\cstddef
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\stddef.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xtr1common
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\cstdlib
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\math.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_math.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\stdlib.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_malloc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_search.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_wstdlib.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\limits.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\initializer_list
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\malloc.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\vcruntime_exception.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\eh.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_terminate.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\tuple
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xutility
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\climits
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\cstring
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\string.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_memory.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_memcpy_s.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\errno.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\vcruntime_string.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_wstring.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\utility
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\typeinfo
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\vcruntime_typeinfo.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xmemory
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\limits
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\cfloat
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\float.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\cwchar
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\cstdio
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\stdio.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_wstdio.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_stdio_config.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\wchar.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_wconio.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_wctype.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_wdirect.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_wio.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_share.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_wprocess.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_wtime.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\sys/stat.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\sys/types.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\intrin0.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\intrin0.inl.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\isa_availability.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\new
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xatomic.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\map
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xtree
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\memory
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\iosfwd
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\mutex
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\chrono
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\ctime
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\time.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\ratio
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xtimec.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\system_error
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\__msvc_system_error_abi.hpp
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\cerrno
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\stdexcept
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xstring
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xcall_once.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xerrc.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\atomic
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xthreads.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\thread
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\process.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_startup.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\math.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\vcruntime_startup.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\thirdparty.hpp
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\include\tsl/ordered_set.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\deque
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\vector
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\include\tsl\ordered_hash.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\algorithm
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\cassert
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\assert.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\cmath
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\iterator
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\include\tsl/ordered_map.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\optional\tl\optional.hpp
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\include\mpark/variant.hpp
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\include\mpark\config.hpp
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\include\mpark\in_place.hpp
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\include\mpark\lib.hpp
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\string-view-lite\include\nonstd/string_view.hpp
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\cassert
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\assert.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\ostream
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\ios
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xlocnum
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\streambuf
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xiosbase
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\share.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xlocale
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xfacet
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xlocinfo
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xlocinfo.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\cctype
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\ctype.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\clocale
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\locale.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\string
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\rd_core_export.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\Lifetime.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/spdlog.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/common.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/tweakme.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/details/null_mutex.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/fmt/fmt.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/fmt/bundled/core.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/fmt/bundled/format.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\intrin.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\setjmp.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\immintrin.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\wmmintrin.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\nmmintrin.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\smmintrin.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\tmmintrin.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\pmmintrin.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\emmintrin.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xmmintrin.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\mmintrin.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\zmmintrin.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\ammintrin.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/details/registry.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/cfg/log_levels.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\unordered_map
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xhash
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\list
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\xbit_ops.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/logger.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/details/log_msg.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/details/backtracer.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/details/log_msg_buffer.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/details/circular_q.h
+D:\Code\VS\VC\Tools\MSVC\14.29.30133\INCLUDE\cassert
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\assert.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/version.h
+D:\Code\UE5 Projects\UE5Playground\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog/details/synchronous_factory.h
