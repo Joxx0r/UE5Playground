@@ -1,7 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "UE5PlaygroundGameMode.h"
-#include "UE5PlaygroundCharacter.h"
+#include "Game/UE5PlaygroundGameMode.h"
+#include "Core/UE5PlaygroundCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 
 AUE5PlaygroundGameMode::AUE5PlaygroundGameMode()

@@ -1,6 +1,5 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
-
-#include "UE5PlaygroundCharacter.h"
+#include "Core/UE5PlaygroundCharacter.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
