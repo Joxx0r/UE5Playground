@@ -13,8 +13,14 @@ public:
 	virtual void Init() override;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	TAssetPtr<UDataTable> m_playerTuningDTAsset;
+	TSoftObjectPtr<UDataTable> m_playerTuningDTAsset;
 
 	UPROPERTY()
 	UDataTable* m_playerTuningDT;
+	
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	TSoftObjectPtr<UDataAsset> m_abilitiesInitDAAsset;
+
+	UPROPERTY()
+	UDataAsset* m_abilitiesInitDA;
 };

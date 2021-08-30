@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "RevPlayerCharacter.generated.h"
 
+class UYRevGameplaySystemComponent;
 UCLASS(config=Game)
 class ARevPlayerCharacter : public ACharacter
 {
@@ -21,6 +22,8 @@ class ARevPlayerCharacter : public ACharacter
 public:
 
 	ARevPlayerCharacter();
+	
+	virtual void BeginPlay() override;
 
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
@@ -69,5 +72,8 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+	UPROPERTY(BlueprintReadOnly)
+	UYRevGameplaySystemComponent* m_gameplayAbilityComponent;
 };
 

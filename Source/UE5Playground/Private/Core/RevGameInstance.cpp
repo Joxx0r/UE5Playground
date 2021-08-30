@@ -10,4 +10,10 @@ void URevGameInstance::Init()
 	{
 		UE_LOG(LogRevLoading, Error, TEXT("Failed loading the player tuning asset"));
 	}
+
+	m_abilitiesInitDA = m_abilitiesInitDAAsset.LoadSynchronous();
+	if(!m_abilitiesInitDA)
+	{
+		UE_LOG(LogRevLoading, Error, TEXT("Failed loading the player DA asset"));
+	}
 }

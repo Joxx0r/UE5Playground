@@ -9,6 +9,18 @@ public class UE5Playground : ModuleRules
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
 		
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "RevUnrealBasics" });
+		PublicDependencyModuleNames.AddRange(new string[]
+		{
+			"Core", 
+			"CoreUObject",
+			"Engine",
+			"InputCore",
+			"HeadMountedDisplay",
+			"RevUnrealBasics", 
+			"GameplayAbilities", 
+			"GameplayTasks",
+			"RevInitializationPlugin
+		});
+
 	}
 }
