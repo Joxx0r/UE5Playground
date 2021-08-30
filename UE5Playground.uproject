@@ -12,8 +12,8 @@
 	],
 	"Plugins": [
 		{
-			"Name": "RiderLink",
-			"Enabled": false
+			"Name": "RevUnrealBasics",
+			"Enabled": true
 		}
 	]
 }

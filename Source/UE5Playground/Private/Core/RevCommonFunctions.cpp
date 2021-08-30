@@ -17,7 +17,7 @@ bool URevCommonFunctions::FindPlayerTuning(const UObject* objCtx, FRevPlayerTuni
 
 FRevPlayerTuning* URevCommonFunctions::FindRawPlayerTuning(const UObject* objCtx)
 {
-	URevGameInstance* revInstance = URevEngineFunctions::FindGameInstanceFromContextObject(objCtx);
+	URevGameInstance* revInstance = Cast<URevGameInstance>(URevEngineFunctions::FindGameInstanceFromContextObject(objCtx));
 	if(!revInstance || !revInstance->m_playerTuningDT)
 	{
 		return nullptr;

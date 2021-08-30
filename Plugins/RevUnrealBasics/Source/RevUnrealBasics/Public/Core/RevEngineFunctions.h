@@ -6,12 +6,12 @@
 class URevGameInstance;
 
 UCLASS(Blueprintable, BlueprintType, ClassGroup=Mobile)
-class URevEngineFunctions : public UObject
+class REVUNREALBASICS_API URevEngineFunctions : public UObject
 {
 	
 public:
 	GENERATED_BODY()
 	
-	static URevGameInstance* FindGameInstanceFromContextObject(const UObject* objCtx);
+	static UGameInstance* FindGameInstanceFromContextObject(const UObject* objCtx);
 };
 
