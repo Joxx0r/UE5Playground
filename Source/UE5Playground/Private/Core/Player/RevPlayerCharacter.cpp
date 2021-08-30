@@ -1,5 +1,5 @@
 ﻿// Copyright Epic Games, Inc. All Rights Reserved.
-#include "Core/RevPlayerCharacter.h"
+#include "Core/Player/RevPlayerCharacter.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
