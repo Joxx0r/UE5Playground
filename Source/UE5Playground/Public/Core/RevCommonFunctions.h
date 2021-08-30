@@ -9,6 +9,7 @@ class URevGameInstance;
 UCLASS()
 class URevCommonFunctions : public UObject
 {
+public:
 	GENERATED_BODY()
 
 	UFUNCTION(BlueprintPure)

@@ -3,5 +3,6 @@
 
 ARevPlayerController::ARevPlayerController()
 {
-	CreateDefaultSubobject<UYRevControllerAbilityComponent>(TEXT("ARevPlayerController"));	
+	CreateDefaultSubobject<
+		UYRevControllerAbilityComponent>(TEXT("ARevPlayerController"));	
 }

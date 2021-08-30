@@ -1,5 +1,11 @@
 ﻿#include "Core/RevGameInstance.h"
+#include "RevInitializationManager.h"
 #include "Core/RevLogCategories.h"
+
+URevGameInstance::URevGameInstance()
+{
+	m_initManager = CreateDefaultSubobject<URevInitializationManager>(TEXT("RevInitManager"));
+}
 
 void URevGameInstance::Init()
 {
@@ -16,4 +22,14 @@ void URevGameInstance::Init()
 	{
 		UE_LOG(LogRevLoading, Error, TEXT("Failed loading the player DA asset"));
 	}
+}
+
+URevInitializationManager* URevGameInstance::GetInitializationManager() const
+{
+	return m_initManager;
+}
+
+bool URevGameInstance::IsAdditionalInitializationComplete(const FRevInitializationContext& relevantContext, ERevInitializationRequestSettingTypes type) const
+{
+	return true;
 }

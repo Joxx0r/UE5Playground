@@ -19,7 +19,7 @@ public class UE5Playground : ModuleRules
 			"RevUnrealBasics", 
 			"GameplayAbilities", 
 			"GameplayTasks",
-			"RevInitializationPlugin
+			"RevInitializationPlugin"
 		});
 
 	}
