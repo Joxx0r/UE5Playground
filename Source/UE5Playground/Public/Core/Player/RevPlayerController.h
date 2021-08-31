@@ -11,5 +11,7 @@ class ARevPlayerController : public APlayerController
 	GENERATED_BODY()
 
 	ARevPlayerController();
-	
+
+	virtual void SetupInputComponent() override;
+
 };

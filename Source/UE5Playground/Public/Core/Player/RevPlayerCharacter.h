@@ -23,8 +23,6 @@ public:
 
 	ARevPlayerCharacter();
 	
-	virtual void BeginPlay() override;
-
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;
@@ -34,9 +32,6 @@ public:
 	float BaseLookUpRate;
 
 protected:
-
-	/** Resets HMD orientation in VR. */
-	void OnResetVR();
 
 	/** Called for forwards/backward input */
 	void MoveForward(float Value);
@@ -56,11 +51,6 @@ protected:
 	 */
 	void LookUpAtRate(float Rate);
 
-	/** Handler for when a touch input begins. */
-	void TouchStarted(ETouchIndex::Type FingerIndex, FVector Location);
-
-	/** Handler for when a touch input stops. */
-	void TouchStopped(ETouchIndex::Type FingerIndex, FVector Location);
 
 protected:
 	// APawn interface

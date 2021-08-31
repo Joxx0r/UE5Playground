@@ -48,11 +48,6 @@ ARevPlayerCharacter::ARevPlayerCharacter()
 
 	m_abilityComponent = CreateDefaultSubobject<UYRevAbilitySystemComponent>(TEXT("RevSystemAbilityComponent"));
 }
-void ARevPlayerCharacter::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
 
 //////////////////////////////////////////////////////////////////////////
 // Input
@@ -61,9 +56,6 @@ void ARevPlayerCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 {
 	// Set up gameplay key bindings
 	check(PlayerInputComponent);
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
-
 	PlayerInputComponent->BindAxis("MoveForward", this, &ARevPlayerCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ARevPlayerCharacter::MoveRight);
 
@@ -74,35 +66,6 @@ void ARevPlayerCharacter::SetupPlayerInputComponent(class UInputComponent* Playe
 	PlayerInputComponent->BindAxis("TurnRate", this, &ARevPlayerCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &ARevPlayerCharacter::LookUpAtRate);
-
-	// handle touch devices
-	PlayerInputComponent->BindTouch(IE_Pressed, this, &ARevPlayerCharacter::TouchStarted);
-	PlayerInputComponent->BindTouch(IE_Released, this, &ARevPlayerCharacter::TouchStopped);
-
-	// VR headset functionality
-	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &ARevPlayerCharacter::OnResetVR);
-}
-
-
-void ARevPlayerCharacter::OnResetVR()
-{
-	// If UE5Playground is added to a project via 'Add Feature' in the Unreal Editor the dependency on HeadMountedDisplay in UE5Playground.Build.cs is not automatically propagated
-	// and a linker error will result.
-	// You will need to either:
-	//		Add "HeadMountedDisplay" to [YourProject].Build.cs PublicDependencyModuleNames in order to build successfully (appropriate if supporting VR).
-	// or:
-	//		Comment or delete the call to ResetOrientationAndPosition below (appropriate if not supporting VR)
-	UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
-}
-
-void ARevPlayerCharacter::TouchStarted(ETouchIndex::Type FingerIndex, FVector Location)
-{
-		Jump();
-}
-
-void ARevPlayerCharacter::TouchStopped(ETouchIndex::Type FingerIndex, FVector Location)
-{
-		StopJumping();
 }
 
 void ARevPlayerCharacter::TurnAtRate(float Rate)
