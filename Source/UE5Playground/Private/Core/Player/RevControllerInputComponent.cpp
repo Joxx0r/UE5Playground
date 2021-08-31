@@ -1,6 +1,6 @@
 ﻿#include "Core/Player/RevControllerInputComponent.h"
-#include "Core/RevEngineFunctions.h"
-#include "GameFramework/Character.h"
+#include "Game/GAAS/RevAbilitySystemComponent.h"
+#include "Game/GAAS/Functions/RevAbilitySystemBaseFunctions.h"
 
 void UYRevControllerInputComponent::BeginPlay()
 {
@@ -9,9 +9,8 @@ void UYRevControllerInputComponent::BeginPlay()
 
 void UYRevControllerInputComponent::OnInputOneClicked()
 {
-	if(ACharacter* character = URevEngineFunctions::FindCharacterFromContextObject(this))
+	if(UYRevAbilitySystemComponent* component = UYRevAbilitySystemBaseFunctions::FindAbilitySystemComponentFromActor(GetOwner()))
 	{
-//		character->Jump();
+		component->TryActivateAbility(UYRevAbilitySystemBaseFunctions::FindAbilitySpecHandleByIndexFromActor(GetOwner(), 0));
 	}
 }
-

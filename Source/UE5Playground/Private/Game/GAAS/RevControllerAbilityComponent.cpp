@@ -27,7 +27,7 @@ void UYRevControllerAbilityComponent::BeginPlay()
 				{
 					for (auto Ability : Instance->m_abilitiesInitDA->m_initialAbilities)
 					{
-						RevAbilitySystemComponent->GiveAbility(Ability);
+						m_specHandles.AddUnique(RevAbilitySystemComponent->GiveAbility(Ability));
 					}
 				}
 			};
