@@ -11,7 +11,7 @@ void UYRevControllerInputComponent::OnInputOneClicked()
 {
 	if(ACharacter* character = URevEngineFunctions::FindCharacterFromContextObject(this))
 	{
-		character->Jump();
+//		character->Jump();
 	}
 }
 

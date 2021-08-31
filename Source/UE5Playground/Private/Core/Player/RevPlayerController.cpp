@@ -2,6 +2,7 @@
 #include "Core/Player/RevControllerInputComponent.h"
 #include "Game/GAAS/RevControllerAbilityComponent.h"
 #include "Core/RevLogCategories.h"
+#include "Core/RevCommonTemplates.h"
 
 ARevPlayerController::ARevPlayerController()
 {
@@ -14,7 +15,7 @@ void ARevPlayerController::SetupInputComponent()
 	Super::SetupInputComponent();
 
 	check(InputComponent);
-	if(UYRevControllerInputComponent* Component = Cast<UYRevControllerInputComponent>(GetComponentByClass(UYRevControllerInputComponent::StaticClass())))
+	if(UYRevControllerInputComponent* Component = RevTemplateFunctions::FindActorComponent<UYRevControllerInputComponent>(this))
 	{
 		InputComponent->BindAction("Jump", IE_Pressed, Component,  &UYRevControllerInputComponent::OnInputOneClicked);
 	}
