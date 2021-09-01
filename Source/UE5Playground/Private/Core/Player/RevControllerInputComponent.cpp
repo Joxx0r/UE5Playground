@@ -22,3 +22,4 @@ void UYRevControllerInputComponent::OnInputTwoClicked()
 		component->TryActivateAbility(UYRevAbilitySystemBaseFunctions::FindAbilitySpecHandleByIndexFromActor(GetOwner(), 1));
 	}
 }
+	
