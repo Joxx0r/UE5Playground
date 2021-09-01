@@ -14,3 +14,11 @@ void UYRevControllerInputComponent::OnInputOneClicked()
 		component->TryActivateAbility(UYRevAbilitySystemBaseFunctions::FindAbilitySpecHandleByIndexFromActor(GetOwner(), 0));
 	}
 }
+
+void UYRevControllerInputComponent::OnInputTwoClicked()
+{
+	if(UYRevAbilitySystemComponent* component = UYRevAbilitySystemBaseFunctions::FindAbilitySystemComponentFromActor(GetOwner()))
+	{
+		component->TryActivateAbility(UYRevAbilitySystemBaseFunctions::FindAbilitySpecHandleByIndexFromActor(GetOwner(), 1));
+	}
+}

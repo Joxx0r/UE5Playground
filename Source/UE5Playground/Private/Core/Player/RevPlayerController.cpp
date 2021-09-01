@@ -17,10 +17,12 @@ void ARevPlayerController::SetupInputComponent()
 	check(InputComponent);
 	if(UYRevControllerInputComponent* Component = RevTemplateFunctions::FindActorComponent<UYRevControllerInputComponent>(this))
 	{
-		InputComponent->BindAction("Jump", IE_Pressed, Component,  &UYRevControllerInputComponent::OnInputOneClicked);
+		InputComponent->BindAction("AbilityOne", IE_Pressed, Component,  &UYRevControllerInputComponent::OnInputOneClicked);
+		InputComponent->BindAction("AbilityTwo", IE_Pressed, Component,  &UYRevControllerInputComponent::OnInputTwoClicked);
 	}
 	else
 	{
 		UE_LOG(LogRevPlayer, Error, TEXT("SetupInputComponent | Failed finding the input controller component to bind proper input towards"));
 	}
+	
 }

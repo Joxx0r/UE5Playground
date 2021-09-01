@@ -12,4 +12,6 @@ public:
 
 	UFUNCTION()
 	void OnInputOneClicked();
+	UFUNCTION()
+	void OnInputTwoClicked();
 };
