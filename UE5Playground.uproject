@@ -22,6 +22,10 @@
 		{
 			"Name": "RevInitializationPlugin",
 			"Enabled": true
+		},
+		{
+			"Name": "MotionWarping",
+			"Enabled": true
 		}
 	]
 }
