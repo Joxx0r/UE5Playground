@@ -18,4 +18,5 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=6AFD013F_002DFC7F_002D0BFE_002D0CFD_002D078129487CDC_002Fd_003APublic_002Fd_003AUObject_002Ff_003ASoftObjectPtr_002Eh/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=9671CEB2_002D2B9D_002D70B9_002D288D_002DDEFCDB1CED84_002Ff_003AUE5Playground_002Ecpp/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=C9BA9AE7_002D84B1_002DDDEC_002D5384_002DB099DAABB87C_002Fd_003APublic_002Ff_003ARevInitializationManager_002Eh/@EntryIndexedValue">ForceIncluded</s:String>
-	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=C9BA9AE7_002D84B1_002DDDEC_002D5384_002DB099DAABB87C_002Fd_003APublic_002Ff_003ARevInitializationPlugin_002Eh/@EntryIndexedValue">ForceIncluded</s:String></wpf:ResourceDictionary>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=C9BA9AE7_002D84B1_002DDDEC_002D5384_002DB099DAABB87C_002Fd_003APublic_002Ff_003ARevInitializationPlugin_002Eh/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/SweaWarningsMode/@EntryValue">ShowAndRun</s:String></wpf:ResourceDictionary>
