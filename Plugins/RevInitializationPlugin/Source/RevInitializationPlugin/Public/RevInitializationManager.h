@@ -14,8 +14,8 @@ public:
 	/** Returns a given intiailization manager. */
 	static URevInitializationManager* FindInitializationManager(const UObject* objCtx);
 
-	/** Updates the initialization manager with given delta seconds. */
-	void Update(float deltaSeconds);
+	/** Initializes the manager to refresh state at a given frequency.*/
+	void Initialize(float refreshFrequency);
 
 	/** Requests an initialization to be callbacked. */
 	static int32 RequestCompleteInitializationCallback(	AActor* actorContext,const FYInitializationCompleteDelegate& delegate, ERevInitializationRequestSettingTypes type = ERevInitializationRequestSettingTypes::AllComplete);
@@ -25,13 +25,26 @@ public:
 	
 protected:
 
+	/** Updates the initialization manager with given delta seconds. */
+	UFUNCTION()
+	void Update();
+	
 	/** Defines the pending requests to initialize. */
 	UPROPERTY()
 	TMap<int32, FRevInitializationRequestEntry> m_requests;
 
+	/** Defines the frequency of how often we check for initialization. */
+	UPROPERTY()
+	float m_checkInitializationStateFrequency = 0.0f;
+
+	/** Defines the stored handle for timermanagement. */
+	FTimerHandle m_initializationStateTimerHandle;
+	
 public:
 
 	/** Returns debug state for the given initialization manager. */
 	static FString GetDebugState(const UObject* objCtx);
 
+
 };
+

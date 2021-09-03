@@ -7,19 +7,11 @@ void UYRevControllerInputComponent::BeginPlay()
 	Super::BeginPlay();
 }
 
-void UYRevControllerInputComponent::OnInputOneClicked()
+void UYRevControllerInputComponent::OnInputOneClicked(int32 inputClicked)
 {
 	if(UYRevAbilitySystemComponent* component = UYRevAbilitySystemBaseFunctions::FindAbilitySystemComponentFromActor(GetOwner()))
 	{
-		component->TryActivateAbility(UYRevAbilitySystemBaseFunctions::FindAbilitySpecHandleByIndexFromActor(GetOwner(), 0));
+		component->TryActivateAbility(UYRevAbilitySystemBaseFunctions::FindAbilitySpecHandleByIndexFromActor(GetOwner(), inputClicked));
 	}
 }
 
-void UYRevControllerInputComponent::OnInputTwoClicked()
-{
-	if(UYRevAbilitySystemComponent* component = UYRevAbilitySystemBaseFunctions::FindAbilitySystemComponentFromActor(GetOwner()))
-	{
-		component->TryActivateAbility(UYRevAbilitySystemBaseFunctions::FindAbilitySpecHandleByIndexFromActor(GetOwner(), 1));
-	}
-}
-	

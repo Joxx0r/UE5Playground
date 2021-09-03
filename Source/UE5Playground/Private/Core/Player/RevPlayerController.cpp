@@ -4,6 +4,8 @@
 #include "Core/RevLogCategories.h"
 #include "Core/RevCommonTemplates.h"
 
+DECLARE_DELEGATE_OneParam(FInputActionHandlerSwitchWeapon, int32);
+
 ARevPlayerController::ARevPlayerController()
 {
 	CreateDefaultSubobject<UYRevControllerAbilityComponent>(TEXT("ControllerAbilityGAASComponent"));	
@@ -17,8 +19,8 @@ void ARevPlayerController::SetupInputComponent()
 	check(InputComponent);
 	if(UYRevControllerInputComponent* Component = RevTemplateFunctions::FindActorComponent<UYRevControllerInputComponent>(this))
 	{
-		InputComponent->BindAction("AbilityOne", IE_Pressed, Component,  &UYRevControllerInputComponent::OnInputOneClicked);
-		InputComponent->BindAction("AbilityTwo", IE_Pressed, Component,  &UYRevControllerInputComponent::OnInputTwoClicked);
+		InputComponent->BindAction<FInputActionHandlerSwitchWeapon>("AbilityOne", IE_Pressed, Component,  &UYRevControllerInputComponent::OnInputOneClicked, 0);
+		InputComponent->BindAction<FInputActionHandlerSwitchWeapon>("AbilityTwo", IE_Pressed, Component,  &UYRevControllerInputComponent::OnInputOneClicked, 1);
 	}
 	else
 	{

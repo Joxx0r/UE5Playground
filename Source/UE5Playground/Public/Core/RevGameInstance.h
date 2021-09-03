@@ -23,6 +23,8 @@ public:
 	
 	virtual bool IsAdditionalInitializationComplete(const FRevInitializationContext& relevantContext, ERevInitializationRequestSettingTypes type) const override;
 
+	virtual void OnWorldChanged(UWorld* OldWorld, UWorld* NewWorld) override;
+	
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	TSoftObjectPtr<UDataTable> m_playerTuningDTAsset;
 

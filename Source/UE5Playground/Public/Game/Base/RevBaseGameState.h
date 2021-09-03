@@ -12,11 +12,6 @@ class ARevBaseGameState : public AGameStateBase
 public:
 	ARevBaseGameState();
 
-	virtual void PostInitializeComponents() override;
-
-	virtual void Update();
-
-	FTimerHandle m_updateTime;
 };
 
 

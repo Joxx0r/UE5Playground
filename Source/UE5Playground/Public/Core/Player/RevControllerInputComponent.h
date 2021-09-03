@@ -11,7 +11,5 @@ public:
 	virtual void BeginPlay() override;
 
 	UFUNCTION()
-	void OnInputOneClicked();
-	UFUNCTION()
-	void OnInputTwoClicked();
+	void OnInputOneClicked(int32 inputClicked);
 };

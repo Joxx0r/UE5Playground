@@ -31,8 +31,25 @@ URevInitializationManager* URevInitializationManager::FindInitializationManager(
 	return nullptr;
 }
 
+void URevInitializationManager::Initialize(float refreshFrequency)
+{
+	m_checkInitializationStateFrequency = refreshFrequency;
+	if(m_checkInitializationStateFrequency > 0.0f)
+	{
+		GetWorld()->GetTimerManager().SetTimer(
+			m_initializationStateTimerHandle,
+			FTimerDelegate::CreateUObject(this, &URevInitializationManager::Update),
+			m_checkInitializationStateFrequency,
+			true);
+	}
+	else
+	{
+		GetWorld()->GetTimerManager().ClearTimer(m_initializationStateTimerHandle);
+	}
+	
+}
 
-void URevInitializationManager::Update(float deltaSeconds)
+void URevInitializationManager::Update()
 {
 	IRevInitializationRetrievalInterface* interface = GetInitializationInterface(this);
 	if(interface == nullptr)

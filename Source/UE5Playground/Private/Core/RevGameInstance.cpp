@@ -33,3 +33,10 @@ bool URevGameInstance::IsAdditionalInitializationComplete(const FRevInitializati
 {
 	return true;
 }
+void URevGameInstance::OnWorldChanged(UWorld* OldWorld, UWorld* NewWorld)
+{
+	Super::OnWorldChanged(OldWorld, NewWorld);
+	//ensure to refresh it at world change.
+	check(m_initManager);
+	m_initManager->Initialize(0.5f);
+}
