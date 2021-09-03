@@ -14,8 +14,10 @@ public:
 
 	UFUNCTION(BlueprintPure)
 	static bool FindPlayerTuning(const UObject* objCtx, FRevPlayerTuning& outTuning);
-
 	static FRevPlayerTuning* FindRawPlayerTuning(const UObject* objCtx);
+	
+	UFUNCTION(BlueprintPure)
+	static URevPlayerInitializationDA* FindPlayerInitializationDataAsset(const UObject* objCtx);
 
 	UFUNCTION(BlueprintPure)
 	static URevGameInstance* FindRevGameInstance(const UObject* objCtx);

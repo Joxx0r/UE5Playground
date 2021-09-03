@@ -30,7 +30,7 @@ URevInitializationManager* URevInitializationManager::FindInitializationManager(
 	}
 	return nullptr;
 }
-
+	
 void URevInitializationManager::Initialize(float refreshFrequency)
 {
 	m_checkInitializationStateFrequency = refreshFrequency;

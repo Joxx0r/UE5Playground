@@ -18,9 +18,9 @@ public:
 	
 protected:
 
-	// APawn interface
+	virtual void BeginPlay() override;
+
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	// End of APawn interface
 	
 	/** Called for forwards/backward input */
 	void MoveForward(float Value);

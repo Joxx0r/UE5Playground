@@ -37,3 +37,13 @@ FRevPlayerTuning* URevCommonFunctions::FindRawPlayerTuning(const UObject* objCtx
 	return nullptr;
 }
 
+URevPlayerInitializationDA* URevCommonFunctions::FindPlayerInitializationDataAsset(const UObject* objCtx)
+{
+	URevGameInstance* revInstance = FindRevGameInstance(objCtx);
+	if(!revInstance || !revInstance->m_playerTuningDTAsset)
+	{
+		return nullptr;
+	}
+	return revInstance->m_playerInitializationDAAsset;
+}
+

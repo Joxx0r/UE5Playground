@@ -3,6 +3,8 @@
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
+#include "Core/RevCommonFunctions.h"
+#include "Core/Player/RevPlayerTypes.h"
 #include "Game/GAAS/RevAbilitySystemComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
@@ -36,8 +38,18 @@ ARevPlayerCharacter::ARevPlayerCharacter()
 	AbilityComponent = CreateDefaultSubobject<UYRevAbilitySystemComponent>(TEXT("RevSystemAbilityComponent"));
 }
 
-//////////////////////////////////////////////////////////////////////////
-// Input
+void ARevPlayerCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+	
+	if(URevPlayerInitializationDA* daAsset = URevCommonFunctions::FindPlayerInitializationDataAsset(this))
+	{
+		check(daAsset->m_meshToUse);
+		check(daAsset->m_animInstanceClass);
+		GetMesh()->SetSkeletalMeshWithoutResettingAnimation(daAsset->m_meshToUse);
+		GetMesh()->SetAnimInstanceClass(daAsset->m_animInstanceClass);
+	}	
+}
 
 void ARevPlayerCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {

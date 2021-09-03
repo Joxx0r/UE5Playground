@@ -25,7 +25,7 @@ void UYRevControllerAbilityComponent::BeginPlay()
 				FGameplayAbilitySpec Spec = {};
 				if(URevGameInstance* Instance = URevCommonFunctions::FindRevGameInstance(context.m_pawn))
 				{
-					for (auto Ability : Instance->m_abilitiesInitDA->m_initialAbilities)
+					for (auto Ability : Instance->m_playerInitializationDAAsset->m_initialAbilities)
 					{
 						UGameplayAbility* newAbility = NewObject<UGameplayAbility>(this, Ability);
 						m_specHandles.AddUnique(RevAbilitySystemComponent->GiveAbility(newAbility));

@@ -12,7 +12,6 @@ struct FRevPlayerTuning : public FRevTableRowBase
 
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category="Camera")
 	float m_cameraDistance;
-
 };
 
 
@@ -22,8 +21,14 @@ class URevPlayerInitializationDA : public UPrimaryDataAsset
 public:
 	GENERATED_BODY()
 	
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditDefaultsOnly, Category="Abilities")
 	TArray<TSubclassOf<UGameplayAbility>> m_initialAbilities;
+	
+	UPROPERTY(EditDefaultsOnly, Category="Mesh")
+	USkeletalMesh* m_meshToUse;
+	
+	UPROPERTY(EditDefaultsOnly, Category="Mesh")
+	UClass* m_animInstanceClass;
 
 	
 };

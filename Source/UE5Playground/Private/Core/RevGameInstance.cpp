@@ -17,8 +17,8 @@ void URevGameInstance::Init()
 		UE_LOG(LogRevLoading, Error, TEXT("Failed loading the player tuning asset"));
 	}
 
-	m_abilitiesInitDA = m_abilitiesInitDAAsset.LoadSynchronous();
-	if(!m_abilitiesInitDA)
+	m_playerInitializationDAAsset = m_playerinitializationDAAssetSoft.LoadSynchronous();
+	if(!m_playerInitializationDAAsset)
 	{
 		UE_LOG(LogRevLoading, Error, TEXT("Failed loading the player DA asset"));
 	}
@@ -33,6 +33,7 @@ bool URevGameInstance::IsAdditionalInitializationComplete(const FRevInitializati
 {
 	return true;
 }
+
 void URevGameInstance::OnWorldChanged(UWorld* OldWorld, UWorld* NewWorld)
 {
 	Super::OnWorldChanged(OldWorld, NewWorld);

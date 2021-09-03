@@ -32,10 +32,9 @@ public:
 	UDataTable* m_playerTuningDT;
 	
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	TSoftObjectPtr<URevPlayerInitializationDA> m_abilitiesInitDAAsset;
-
+	TSoftObjectPtr<URevPlayerInitializationDA> m_playerinitializationDAAssetSoft;
 	UPROPERTY()
-	URevPlayerInitializationDA* m_abilitiesInitDA;
+	URevPlayerInitializationDA* m_playerInitializationDAAsset;
 
 	UPROPERTY()
 	URevInitializationManager* m_initManager;
