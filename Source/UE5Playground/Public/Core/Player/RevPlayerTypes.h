@@ -5,6 +5,21 @@
 #include "Core/RevTableRowBase.h"
 #include "RevPlayerTypes.generated.h"
 
+UENUM(BlueprintType)
+enum class ERevAnimationType : uint8
+{
+	Dodge
+};
+
+USTRUCT(BlueprintType)
+struct FRevPlayerGameplayAnimationData 
+{
+	GENERATED_BODY()
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	UAnimMontage* m_animationMontage;
+};
+
 USTRUCT()
 struct FRevPlayerTuning : public FRevTableRowBase
 {
@@ -16,6 +31,22 @@ struct FRevPlayerTuning : public FRevTableRowBase
 
 
 UCLASS()
+class URevCharacterDA : public UPrimaryDataAsset
+{
+public:
+	GENERATED_BODY()
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly,  Category="Animation")
+	USkeletalMesh* m_meshToUse;
+	
+	UPROPERTY(EditDefaultsOnly,  BlueprintReadOnly, Category="Animation")
+	UClass* m_animInstanceClass;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Animation")
+	TMap<ERevAnimationType, FRevPlayerGameplayAnimationData> m_gameplayToAnimationData;
+};
+
+UCLASS()
 class URevPlayerInitializationDA : public UPrimaryDataAsset
 {
 public:
@@ -23,13 +54,8 @@ public:
 	
 	UPROPERTY(EditDefaultsOnly, Category="Abilities")
 	TArray<TSubclassOf<UGameplayAbility>> m_initialAbilities;
-	
-	UPROPERTY(EditDefaultsOnly, Category="Mesh")
-	USkeletalMesh* m_meshToUse;
-	
-	UPROPERTY(EditDefaultsOnly, Category="Mesh")
-	UClass* m_animInstanceClass;
 
-	
+	UPROPERTY(EditDefaultsOnly,  BlueprintReadOnly, Category="Animation")
+	TObjectPtr<URevCharacterDA> m_characterDA;
 };
 

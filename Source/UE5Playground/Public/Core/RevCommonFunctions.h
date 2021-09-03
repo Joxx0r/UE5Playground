@@ -18,6 +18,9 @@ public:
 	
 	UFUNCTION(BlueprintPure)
 	static URevPlayerInitializationDA* FindPlayerInitializationDataAsset(const UObject* objCtx);
+	
+	UFUNCTION(BlueprintPure)
+	static URevCharacterDA* FindPlayerAnimationDA(const UObject* objCtx);
 
 	UFUNCTION(BlueprintPure)
 	static URevGameInstance* FindRevGameInstance(const UObject* objCtx);

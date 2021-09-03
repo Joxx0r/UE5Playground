@@ -47,3 +47,13 @@ URevPlayerInitializationDA* URevCommonFunctions::FindPlayerInitializationDataAss
 	return revInstance->m_playerInitializationDAAsset;
 }
 
+URevCharacterDA* URevCommonFunctions::FindPlayerAnimationDA(const UObject* objCtx)
+{
+	URevPlayerInitializationDA* daInit = FindPlayerInitializationDataAsset(objCtx);
+	if(!daInit)
+	{
+		return nullptr;
+	}
+	return daInit->m_characterDA;
+}
+

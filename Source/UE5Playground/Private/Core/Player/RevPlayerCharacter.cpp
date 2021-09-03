@@ -42,7 +42,7 @@ void ARevPlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	if(URevPlayerInitializationDA* daAsset = URevCommonFunctions::FindPlayerInitializationDataAsset(this))
+	if(URevCharacterDA* daAsset = URevCommonFunctions::FindPlayerAnimationDA(this))
 	{
 		check(daAsset->m_meshToUse);
 		check(daAsset->m_animInstanceClass);
