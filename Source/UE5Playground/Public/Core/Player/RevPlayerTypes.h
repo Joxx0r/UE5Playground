@@ -12,6 +12,7 @@ struct FRevPlayerTuning : public FRevTableRowBase
 
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category="Camera")
 	float m_cameraDistance;
+
 };
 
 
@@ -23,5 +24,7 @@ public:
 	
 	UPROPERTY(EditDefaultsOnly)
 	TArray<TSubclassOf<UGameplayAbility>> m_initialAbilities;
+
+	
 };
 
