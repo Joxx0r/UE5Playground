@@ -3,13 +3,15 @@
 #include "Game/GAAS/RevControllerAbilityComponent.h"
 #include "Core/RevLogCategories.h"
 #include "Core/RevCommonTemplates.h"
+#include "Core/Player/RevPlayerCheatManager.h"
 
 DECLARE_DELEGATE_OneParam(FInputActionHandlerSwitchWeapon, int32);
 
 ARevPlayerController::ARevPlayerController()
 {
 	CreateDefaultSubobject<UYRevControllerAbilityComponent>(TEXT("ControllerAbilityGAASComponent"));	
-	CreateDefaultSubobject<UYRevControllerInputComponent>(TEXT("ControllerInputComponent"));	
+	CreateDefaultSubobject<UYRevControllerInputComponent>(TEXT("ControllerInputComponent"));
+	CheatClass = URevCheatManager::StaticClass();
 }
 
 void ARevPlayerController::SetupInputComponent()
