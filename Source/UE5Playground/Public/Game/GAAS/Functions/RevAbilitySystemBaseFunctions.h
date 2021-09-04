@@ -5,7 +5,7 @@
 #include "RevAbilitySystemBaseFunctions.generated.h"
 
 class UYRevControllerAbilityComponent;
-class UYRevAbilitySystemComponent;
+class URevAbilitySystemComponent;
 
 UCLASS()
 class UYRevAbilitySystemBaseFunctions : public UObject
@@ -14,9 +14,9 @@ public:
 	GENERATED_BODY()
 
 	UFUNCTION(BlueprintCallable)
-	static UYRevAbilitySystemComponent* FindAbilitySystemComponentFromActor(const AActor* actCtx);
+	static URevAbilitySystemComponent* FindAbilitySystemComponentFromActor(const AActor* actCtx);
 	UFUNCTION(BlueprintCallable)
-	static const UYRevAbilitySystemComponent* FindAbilitySystemComponentFromActorConst(const AActor* actCtx);
+	static const URevAbilitySystemComponent* FindAbilitySystemComponentFromActorConst(const AActor* actCtx);
 
 	UFUNCTION(BlueprintCallable)
 	static UYRevControllerAbilityComponent* FindControllerAbilityComponent(const AActor* actCtx);

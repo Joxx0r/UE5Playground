@@ -9,7 +9,7 @@ void UYRevControllerInputComponent::BeginPlay()
 
 void UYRevControllerInputComponent::OnInputOneClicked(int32 inputClicked)
 {
-	if(UYRevAbilitySystemComponent* component = UYRevAbilitySystemBaseFunctions::FindAbilitySystemComponentFromActor(GetOwner()))
+	if(URevAbilitySystemComponent* component = UYRevAbilitySystemBaseFunctions::FindAbilitySystemComponentFromActor(GetOwner()))
 	{
 		component->TryActivateAbility(UYRevAbilitySystemBaseFunctions::FindAbilitySpecHandleByIndexFromActor(GetOwner(), inputClicked));
 	}
@@ -17,7 +17,7 @@ void UYRevControllerInputComponent::OnInputOneClicked(int32 inputClicked)
 
 void UYRevControllerInputComponent::OnLeftMouseClick()
 {
-	if(UYRevAbilitySystemComponent* component = UYRevAbilitySystemBaseFunctions::FindAbilitySystemComponentFromActor(GetOwner()))
+	if(URevAbilitySystemComponent* component = UYRevAbilitySystemBaseFunctions::FindAbilitySystemComponentFromActor(GetOwner()))
 	{
 		component->TryActivateAbility(UYRevAbilitySystemBaseFunctions::FindAbilitySpecHandleByIndexFromActor(GetOwner(), 0));
 	}

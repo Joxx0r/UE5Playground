@@ -6,7 +6,7 @@
 #include "GameFramework/Character.h"
 #include "RevPlayerCharacter.generated.h"
 
-class UYRevAbilitySystemComponent;
+class URevAbilitySystemComponent;
 UCLASS(config=Game)
 class ARevPlayerCharacter : public ACharacter
 {
@@ -39,7 +39,7 @@ public:
 	class UCameraComponent* FollowCamera;
 	
 	UPROPERTY(BlueprintReadOnly)
-	UYRevAbilitySystemComponent* AbilityComponent;
+	URevAbilitySystemComponent* AbilityComponentSelf;
 
 };
 

@@ -20,7 +20,7 @@ void UYRevControllerAbilityComponent::BeginPlay()
 		}
 		if(context.m_pawn)
 		{
-			if(UYRevAbilitySystemComponent* RevAbilitySystemComponent = RevTemplateFunctions::FindActorComponent<UYRevAbilitySystemComponent>(context.m_pawn))
+			if(URevAbilitySystemComponent* RevAbilitySystemComponent = RevTemplateFunctions::FindActorComponent<URevAbilitySystemComponent>(context.m_pawn))
 			{
 				FGameplayAbilitySpec Spec = {};
 				if(URevGameInstance* Instance = URevCommonFunctions::FindRevGameInstance(context.m_pawn))

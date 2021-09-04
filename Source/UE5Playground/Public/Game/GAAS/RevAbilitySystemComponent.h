@@ -4,7 +4,7 @@
 #include "RevAbilitySystemComponent.generated.h"
 
 UCLASS()
-class UYRevAbilitySystemComponent : public UAbilitySystemComponent
+class URevAbilitySystemComponent : public UAbilitySystemComponent
 {
 	GENERATED_BODY()
 };

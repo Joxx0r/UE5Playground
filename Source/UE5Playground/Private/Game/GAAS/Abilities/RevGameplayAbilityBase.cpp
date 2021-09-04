@@ -10,7 +10,7 @@ FRevGameplayEffectContainerSpec URevGameplayAbilityBase::MakeEffectContainerSpec
 	FRevGameplayEffectContainerSpec ReturnSpec;
 	AActor* OwningActor = GetOwningActorFromActorInfo();
 	APawn* OwningCharacter = Cast<APawn>(OwningActor);
-	UYRevAbilitySystemComponent* OwningASC = RevTemplateFunctions::FindActorComponent<UYRevAbilitySystemComponent>(OwningActor);
+	URevAbilitySystemComponent* OwningASC = RevTemplateFunctions::FindActorComponent<URevAbilitySystemComponent>(OwningActor);
 	if (OwningASC)
 	{
 		// If we have a target type, run the targeting logic. This is optional, targets can be added later

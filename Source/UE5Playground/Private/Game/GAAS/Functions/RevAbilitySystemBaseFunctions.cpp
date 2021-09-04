@@ -3,14 +3,14 @@
 #include "Game/GAAS/RevControllerAbilityComponent.h"
 #include "Game/GAAS/RevAbilitySystemComponent.h"
 
-UYRevAbilitySystemComponent* UYRevAbilitySystemBaseFunctions::FindAbilitySystemComponentFromActor(const AActor* actCtx)
+URevAbilitySystemComponent* UYRevAbilitySystemBaseFunctions::FindAbilitySystemComponentFromActor(const AActor* actCtx)
 {
-	return RevTemplateFunctions::FindActorComponentControllerPawn<UYRevAbilitySystemComponent>(actCtx);
+	return RevTemplateFunctions::FindActorComponentControllerPawn<URevAbilitySystemComponent>(actCtx);
 }
 
-const UYRevAbilitySystemComponent* UYRevAbilitySystemBaseFunctions::FindAbilitySystemComponentFromActorConst(const AActor* actCtx)
+const URevAbilitySystemComponent* UYRevAbilitySystemBaseFunctions::FindAbilitySystemComponentFromActorConst(const AActor* actCtx)
 {
-	return RevTemplateFunctions::FindActorComponentControllerPawn<const UYRevAbilitySystemComponent>(actCtx);
+	return RevTemplateFunctions::FindActorComponentControllerPawn<const URevAbilitySystemComponent>(actCtx);
 }
 
 UYRevControllerAbilityComponent* UYRevAbilitySystemBaseFunctions::FindControllerAbilityComponent(const AActor* actCtx)
