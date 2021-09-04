@@ -18,8 +18,8 @@ public:
 	
 	virtual void BeginPlay() override;
 
-	virtual ARevImpactManager* GetImpactManager() const override{ return m_impactManager; }
 	virtual ARevTransportManager* GetTransportManager() const override { return m_transportManager; }
+	virtual ARevImpactManager* GetImpactManager() const override{ return m_impactManager; }
 
 protected:
 
