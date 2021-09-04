@@ -24,6 +24,10 @@
 			"Enabled": true
 		},
 		{
+			"Name": "RevGameplayTracer",
+			"Enabled": true
+		},
+		{
 			"Name": "MotionWarping",
 			"Enabled": true
 		}

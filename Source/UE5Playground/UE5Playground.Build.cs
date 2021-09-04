@@ -20,6 +20,7 @@ public class UE5Playground : ModuleRules
 			"GameplayAbilities", 
 			"GameplayTasks",
 			"GameplayTags",
+			"RevGameplayTracer",
 			"RevInitializationPlugin"
 		});
 

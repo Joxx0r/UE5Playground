@@ -12,5 +12,7 @@ class URevCheatManager : public UCheatManager
 	UFUNCTION(exec)
 	void RevDebugExecuteTransport();
 	
+	UFUNCTION(exec)
+	void RevDebugExecuteImpact();
 };
 
