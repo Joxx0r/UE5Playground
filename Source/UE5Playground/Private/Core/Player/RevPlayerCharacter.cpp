@@ -6,6 +6,7 @@
 #include "Core/RevCommonFunctions.h"
 #include "Core/Player/RevPlayerTypes.h"
 #include "Game/GAAS/RevAbilitySystemComponent.h"
+#include "Game/GAAS/AttributeSets/RevAttributeCoreSetComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
@@ -36,6 +37,8 @@ ARevPlayerCharacter::ARevPlayerCharacter()
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
 	AbilityComponent = CreateDefaultSubobject<UYRevAbilitySystemComponent>(TEXT("RevSystemAbilityComponent"));
+	AbilityComponent->SetIsReplicated(true);
+	CreateDefaultSubobject<URevAttributeCoreSetComponent>(TEXT("CoreSetAttributeComponent"));
 }
 
 void ARevPlayerCharacter::BeginPlay()

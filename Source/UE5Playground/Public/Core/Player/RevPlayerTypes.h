@@ -8,7 +8,9 @@
 UENUM(BlueprintType)
 enum class ERevAnimationType : uint8
 {
-	Dodge
+	None,
+	Dodge,
+	Melee
 };
 
 USTRUCT(BlueprintType)

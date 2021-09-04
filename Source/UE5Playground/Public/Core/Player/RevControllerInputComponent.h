@@ -12,4 +12,7 @@ public:
 
 	UFUNCTION()
 	void OnInputOneClicked(int32 inputClicked);
+	
+	UFUNCTION()
+	void OnLeftMouseClick();
 };

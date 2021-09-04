@@ -1,7 +1,8 @@
 ﻿#include "Core/RevEngineFunctions.h"
 #include "GameFramework/Character.h"
 
-UGameInstance* URevEngineFunctions::FindGameInstanceFromContextObject(const UObject* objCtx)
+
+const UGameInstance* URevEngineFunctions::FindGameInstanceFromContextObjectConst(const UObject* objCtx)
 {
 	UWorld* world = GEngine->GetWorldFromContextObject(objCtx, EGetWorldErrorMode::LogAndReturnNull);
 	if(!world)
@@ -12,9 +13,9 @@ UGameInstance* URevEngineFunctions::FindGameInstanceFromContextObject(const UObj
 	return world->GetGameInstance();
 }
 
-const UGameInstance* URevEngineFunctions::FindGameInstanceFromContextObjectConst(const UObject* objCtx)
+UGameInstance* URevEngineFunctions::FindGameInstanceFromContextObject(const UObject* objCtx)
 {
-	return FindGameInstanceFromContextObject(objCtx);
+	return const_cast<UGameInstance*>(FindGameInstanceFromContextObjectConst(objCtx));
 }
 
 const APawn* URevEngineFunctions::FindPawnFromContextObjectConst(const UObject* objCtx)
@@ -49,4 +50,54 @@ const ACharacter* URevEngineFunctions::FindCharacterFromContextObjectConst(const
 ACharacter* URevEngineFunctions::FindCharacterFromContextObject(const UObject* objCtx)
 {
 	return const_cast<ACharacter*>(Cast<ACharacter>(FindCharacterFromContextObjectConst(objCtx)));
+}
+
+const APlayerController* URevEngineFunctions::FindLocalPlayerControllerFromContextObjectConst(const UObject* objCtx)
+{
+	UWorld* world = objCtx->GetWorld();
+	check(world);
+	if(world->IsNetMode(NM_DedicatedServer))
+	{
+		return nullptr;
+	}
+	return world->GetFirstPlayerController();
+}
+
+APlayerController* URevEngineFunctions::FindLocalPlayerControllerFromContextObject(const UObject* objCtx)
+{
+	return const_cast<APlayerController*>(Cast<APlayerController>(FindLocalPlayerControllerFromContextObjectConst(objCtx)));
+}
+
+const APlayerController* URevEngineFunctions::FindPlayerControllerFromContextObjectConst(const UObject* objCtx, bool useLocal /*= true*/)
+{
+	if(const APawn* pawn = Cast<APawn>(objCtx))
+	{
+		AController* pawnController = pawn->GetController();
+		if(pawnController != nullptr && pawnController->IsA<APlayerController>())
+		{
+			return Cast<APlayerController>(pawnController);
+		}
+	}
+	if(const UActorComponent* component = Cast<UActorComponent>(objCtx))
+	{
+		return FindPlayerControllerFromContextObjectConst(component->GetOwner(), useLocal);
+	}
+	if(const AController* controller = Cast<AController>(objCtx))
+	{
+		if(controller != nullptr && controller->IsA<APlayerController>())
+		{
+			return Cast<APlayerController>(controller);
+		}
+	}
+	if(useLocal)
+	{
+		return FindLocalPlayerControllerFromContextObjectConst(objCtx);	
+	}
+	
+	return nullptr;
+}
+
+APlayerController* URevEngineFunctions::FindPlayerControllerFromContextObject(const UObject* objCtx, bool useLocal /*= true*/)
+{
+	return const_cast<APlayerController*>(Cast<APlayerController>(FindPlayerControllerFromContextObjectConst(objCtx, useLocal)));	
 }

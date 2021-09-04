@@ -21,6 +21,7 @@ void ARevPlayerController::SetupInputComponent()
 	{
 		InputComponent->BindAction<FInputActionHandlerSwitchWeapon>("AbilityOne", IE_Pressed, Component,  &UYRevControllerInputComponent::OnInputOneClicked, 0);
 		InputComponent->BindAction<FInputActionHandlerSwitchWeapon>("AbilityTwo", IE_Pressed, Component,  &UYRevControllerInputComponent::OnInputOneClicked, 1);
+		InputComponent->BindAction("LeftMouseAction", IE_Pressed, Component,  &UYRevControllerInputComponent::OnLeftMouseClick);
 	}
 	else
 	{

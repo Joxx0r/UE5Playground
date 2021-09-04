@@ -12,5 +12,7 @@ public:
 
 	UFUNCTION(BlueprintPure)
 	static bool FindAnimationDataForAsset(const UObject* objCtx, ERevAnimationType type, FRevPlayerGameplayAnimationData& outData); 
+	UFUNCTION(BlueprintPure)
+	static bool FindRelevantPlayerViewLocationRotation(const UObject* objCtx, bool useLocal, FVector& outLocation, FRotator& outRotation); 
 };
 
